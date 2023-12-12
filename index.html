@@ -8,18 +8,7 @@
     <title>login</title>
 </head>
 <body class="fundo-home">
-    <style>
-        /*em processo para mover pro css*/
-        .fundo-home{
-            background: url("assets/img/background01.jpg");
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-size:cover ; /*alinha imahem*/
-            background-position: center; /*centralizaa*/
-        }
-    </style>
+
     <header>
 
         <div class="logo">
@@ -31,11 +20,42 @@
             <a href="#">Sobre o Clube</a>
             <a href="#">contato</a>
             <button class="btnLogin">Login</button>
-        </nav>       
+        </nav>
+                  
+    </header>
+    <main>
+
+        <div class="login-box">
+
+            <span class="x-button">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
             
- </header>
 
-
-    
+            <div class="login-form">
+                <h2>Login</h2>
+                <H6>Area de Membros</H6>
+                <form>
+                    <div class="login-input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" required id="name">
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="login-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required id="password">
+                        <label for="password">Senha</label>
+                    </div>
+                    <div class="forget-pass">
+                        <label>
+                            <input type="checkbox"> Lembre-se de mim</label>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    <button type="submit" id="login-button">Login</button>
+                </form>
+            </div>                       
+        </div>
+        
+    </main>
 </body>
 </html>
