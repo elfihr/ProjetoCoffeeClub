@@ -224,6 +224,16 @@ header{
     border-radius: 6px;
     font-size: 1em;
     font-weight: 500;
+    transition: 0.5s;
+}
+
+#login-button:hover{
+    background: var(--cor-letra-claro);
+    color: var(--cor-letra-escuro-um);
+}
+
+#login-button:active{
+    transform: scale(0.95);
 }
 
 /*sera ajustado com o tempo*/
